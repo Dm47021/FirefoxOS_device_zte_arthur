@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="DM"
+        fetch="git://github.com/Dm47021/" />
+
+    <!-- ZTE WARP I -->
+    <project path="device/zte/arthur" name="FirefoxOS_device_zte_arthur" remote="DM" revision="master" />
+</manifest>
