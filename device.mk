@@ -1,7 +1,6 @@
 $(call inherit-product, build/target/product/full.mk)
 
 $(call inherit-product, build/target/product/languages_small.mk)
-$(call inherit-product, vendor/cm/config/common.mk)
 
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
@@ -116,12 +115,6 @@ PRODUCT_PACKAGES += \
 # WarpedParts App
 PRODUCT_PACKAGES += \
         V9Parts
-
-# Live Wallpapers
-PRODUCT_PACKAGES += \
-        LiveWallpapers \
-	LiveWallpapersPicker \
-        librs_jni 
 
 # Other       
 PRODUCT_PACKAGES += \

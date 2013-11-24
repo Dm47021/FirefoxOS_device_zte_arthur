@@ -21,5 +21,3 @@
 # function: add_lunch_combo generic-eng
 
 add_lunch_combo full_arthur-eng
-add_lunch_combo cm_arthur-eng
-add_lunch_combo cm_arthur-userdebug

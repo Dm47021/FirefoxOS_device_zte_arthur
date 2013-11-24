@@ -52,9 +52,8 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno200
 TARGET_BOARD_PLATFORM_FPU := neon
 BOARD_USES_ADRENO_200 := true
 
+TARGET_NO_RECOVERY := true
 TARGET_PROVIDES_INIT_RC := true
-TARGET_PROVIDES_RECOVERY_INIT_RC := true
-TARGET_RECOVERY_INITRC := device/zte/arthur/recovery/root/init.rc
 ARCH_ARM_HAVE_ARMV7A := true
 # We Dont Build These
 TARGET_NO_BOOTLOADER := true
@@ -65,7 +64,6 @@ TARGET_NO_INITLOGO := true
 ENABLE_WEBGL := true
 TARGET_FORCE_CPU_UPLOAD := true
 DYNAMIC_SHARED_LIBV8SO := false
-WITH_JIT := true
 ENABLE_JSC_JIT := true
 JS_ENGINE := v8
 
@@ -200,17 +198,9 @@ BOARD_CUSTOM_USB_CONTROLLER := ../../device/zte/arthur/UsbController.cpp
 BOARD_UMS_LUNFILE := /sys/devices/platform/msm_hsusb/gadget/lun0/file
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun0/file
 
-# TWRP RECOVERY
-TARGET_RECOVERY_GUI := true
-DEVICE_RESOLUTION := 480x800
-TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
 BOARD_HAS_FLIPPED_SCREEN := true
 
 TARGET_OTA_ASSERT_DEVICE := arthur,warp
-TARGET_RECOVERY_INITRC := device/zte/arthur/recovery/root/init.rc
-BOARD_CUSTOM_GRAPHICS := ../../../device/zte/arthur/recovery/graphics.c
-BOARD_CUSTOM_RECOVERY_KEYMAPPING:= ../../device/zte/arthur/recovery/recovery_ui.c
-TARGET_RECOVERY_PRE_COMMAND := "echo 3 > /proc/sys/vm/drop_caches; sync"
 
 # Releasetools
 TARGET_PROVIDES_RELEASETOOLS := true
